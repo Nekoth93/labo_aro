@@ -1,39 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project integrity="109289702c1f1cbbb82e7af512823ad5fcb10cd4" source="2.16.8.t" version="1.0">
-This file is intended to be loaded by Logisim-evolution (https://github.com/reds-heig/logisim-evolution).
-<lib desc="#Wiring" name="0">
+<project integrity="a2c0c9b93926d79d644464052e28101e25d69641" source="2.16.8.t" version="1.0">
+  This file is intended to be loaded by Logisim-evolution (https://github.com/reds-heig/logisim-evolution).
+
+  <lib desc="#Wiring" name="0">
     <tool name="Splitter">
       <a name="facing" val="west"/>
-      <a name="owner" val="autogen:prodis"/>
-      <a name="date" val="29.04.14 11:40:05"/>
-      <a name="version" val="2.10.6.1"/>
-      <a name="uuid" val="cc30de22-b2a2-49a8-8148-621514e7d753"/>
-      <a name="integrity" val="94c97077dc645a9a5961a033f263102e68f0e1d1"/>
+      <a name="incoming" val="8"/>
+      <a name="date" val="04.11.16 16:09:15"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="1"/>
+      <a name="bit5" val="1"/>
+      <a name="bit6" val="1"/>
+      <a name="bit7" val="1"/>
     </tool>
     <tool name="Pin">
-      <a name="width" val="6"/>
-      <a name="label" val="Code"/>
-      <a name="owner" val="autogen:prodis"/>
-      <a name="date" val="29.04.14 11:40:05"/>
-      <a name="version" val="2.10.6.1"/>
-      <a name="uuid" val="d12596bb-e49d-4d46-b0dc-5c7d100fe93d"/>
-      <a name="integrity" val="9c200588cd11827d4332797449fe4332273e6726"/>
+      <a name="output" val="true"/>
+      <a name="label" val="C_out"/>
+      <a name="date" val="04.11.16 16:09:15"/>
     </tool>
     <tool name="Probe">
-      <a name="facing" val="south"/>
+      <a name="owner" val="autogen:mirabile_theo"/>
+      <a name="date" val="23.09.20 09:24:44"/>
+      <a name="version" val="3.3.1"/>
+      <a name="uuid" val="861a8d6d-5273-4325-a7e0-39e15e5a98cc"/>
+      <a name="integrity" val="55724772741028c5faece07a86a063962feec296"/>
     </tool>
     <tool name="Tunnel">
       <a name="width" val="16"/>
-      <a name="label" val="Val_Rn"/>
     </tool>
     <tool name="Clock">
       <a name="highDuration" val="4"/>
       <a name="lowDuration" val="4"/>
       <a name="owner" val="autogen:prodis"/>
-      <a name="date" val="29.04.14 11:40:05"/>
-      <a name="version" val="2.10.6.1"/>
-      <a name="uuid" val="a650981a-5b19-4416-a77b-3c4ecefa37d4"/>
-      <a name="integrity" val="377bce6710623459fa705558d8837121f2e66a77"/>
+      <a name="date" val="18.02.15 14:34:16"/>
+      <a name="version" val="2.13.5"/>
+      <a name="uuid" val="c85b2261-b58b-42a7-b8bd-52732e3cb3c1"/>
+      <a name="integrity" val="835cd60b73ff0ed0e6f0bfa41aeb9d77093707a5"/>
     </tool>
     <tool name="Constant">
       <a name="value" val="0x0"/>
@@ -59,44 +63,44 @@ This file is intended to be loaded by Logisim-evolution (https://github.com/reds
   <lib desc="#I/O" name="5"/>
   <lib desc="#HDL-IP" name="6">
     <tool name="VHDL Entity">
-      <a name="content">--------------------------------------------------------------------------------&#13;
--- HEIG-VD, institute REDS, 1400 Yverdon-les-Bains&#13;
--- Project :&#13;
--- File    :&#13;
--- Autor   :&#13;
--- Date    :&#13;
---&#13;
---------------------------------------------------------------------------------&#13;
--- Description :&#13;
---&#13;
---------------------------------------------------------------------------------&#13;
-&#13;
-library ieee;&#13;
-  use ieee.std_logic_1164.all;&#13;
-  --use ieee.numeric_std.all;&#13;
-&#13;
-entity VHDL_Component is&#13;
-  port(&#13;
-  ------------------------------------------------------------------------------&#13;
-  --Insert input ports below&#13;
-    horloge_i  : in  std_logic;                    -- input bit example&#13;
-    val_i      : in  std_logic_vector(3 downto 0); -- input vector example&#13;
-  ------------------------------------------------------------------------------&#13;
-  --Insert output ports below&#13;
-    max_o      : out std_logic;                    -- output bit example&#13;
-    cpt_o      : out std_logic_Vector(3 downto 0)  -- output vector example&#13;
-    );&#13;
-end VHDL_Component;&#13;
-&#13;
---------------------------------------------------------------------------------&#13;
---Complete your VHDL description below&#13;
-architecture type_architecture of VHDL_Component is&#13;
-&#13;
-&#13;
-begin&#13;
-&#13;
-&#13;
-end type_architecture;&#13;
+      <a name="content">--------------------------------------------------------------------------------
+-- HEIG-VD, institute REDS, 1400 Yverdon-les-Bains
+-- Project :
+-- File    :
+-- Autor   :
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+library ieee;
+  use ieee.std_logic_1164.all;
+  --use ieee.numeric_std.all;
+
+entity VHDL_Component is
+  port(
+  ------------------------------------------------------------------------------
+  --Insert input ports below
+    horloge_i  : in  std_logic;                    -- input bit example
+    val_i      : in  std_logic_vector(3 downto 0); -- input vector example
+  ------------------------------------------------------------------------------
+  --Insert output ports below
+    max_o      : out std_logic;                    -- output bit example
+    cpt_o      : out std_logic_Vector(3 downto 0)  -- output vector example
+    );
+end VHDL_Component;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+architecture type_architecture of VHDL_Component is
+
+
+begin
+
+
+end type_architecture;
 </a>
     </tool>
   </lib>
@@ -307,12 +311,8 @@ end TCL_Generic;
       <a name="addrWidth" val="15"/>
       <a name="dataWidth" val="16"/>
       <a name="contents">addr/data: 15 16
-2019 21e5 2209 1c03 1c14 d109 10*0 2000
-d005 6*0 20ff 200 21ff 4308 d30a 11*0
-3001 d205 6*0 2000 d505 6*0 2001 3c0
-d40c 13*0 2080 200 2100 4308 3801 d609
-10*0 2000 d705 6*0 e01e 31*0 f000 fb7e
-894*0 f7ff fbfe
+2003 2208 18c4 212b 1888 1c01 2600 54
+4251 1e9a 400c 5454 e7fe
 </a>
       <a name="label" val="InstrMemory"/>
     </comp>
@@ -1009,14 +1009,14 @@ d40c 13*0 2080 200 2100 4308 3801 d609
     <wire from="(160,740)" to="(210,740)"/>
     <wire from="(160,780)" to="(210,780)"/>
     <wire from="(730,310)" to="(730,330)"/>
-    <wire from="(890,420)" to="(910,420)"/>
-    <wire from="(890,460)" to="(910,460)"/>
+    <wire from="(850,900)" to="(870,900)"/>
+    <wire from="(890,380)" to="(910,380)"/>
     <wire from="(850,860)" to="(870,860)"/>
     <wire from="(200,120)" to="(230,120)"/>
     <wire from="(1520,940)" to="(1530,940)"/>
     <wire from="(890,500)" to="(910,500)"/>
-    <wire from="(850,900)" to="(870,900)"/>
-    <wire from="(890,380)" to="(910,380)"/>
+    <wire from="(890,420)" to="(910,420)"/>
+    <wire from="(890,460)" to="(910,460)"/>
     <wire from="(630,640)" to="(650,640)"/>
     <wire from="(1850,980)" to="(1870,980)"/>
     <wire from="(1850,860)" to="(1870,860)"/>
@@ -2331,12 +2331,12 @@ d40c 13*0 2080 200 2100 4308 3801 d609
     <wire from="(690,860)" to="(710,860)"/>
     <wire from="(1110,780)" to="(1440,780)"/>
     <wire from="(660,860)" to="(690,860)"/>
+    <wire from="(550,110)" to="(580,110)"/>
+    <wire from="(390,880)" to="(410,880)"/>
     <wire from="(550,270)" to="(580,270)"/>
     <wire from="(550,190)" to="(580,190)"/>
     <wire from="(550,230)" to="(580,230)"/>
     <wire from="(550,150)" to="(580,150)"/>
-    <wire from="(550,110)" to="(580,110)"/>
-    <wire from="(390,880)" to="(410,880)"/>
     <wire from="(240,110)" to="(240,350)"/>
     <wire from="(590,490)" to="(1170,490)"/>
     <wire from="(1220,660)" to="(1440,660)"/>
@@ -3509,14 +3509,14 @@ d40c 13*0 2080 200 2100 4308 3801 d609
     <wire from="(950,30)" to="(950,140)"/>
     <wire from="(1000,240)" to="(1020,240)"/>
     <wire from="(880,170)" to="(880,210)"/>
-    <wire from="(410,290)" to="(430,290)"/>
-    <wire from="(410,530)" to="(430,530)"/>
-    <wire from="(410,130)" to="(430,130)"/>
-    <wire from="(410,50)" to="(430,50)"/>
-    <wire from="(410,610)" to="(430,610)"/>
-    <wire from="(410,450)" to="(430,450)"/>
-    <wire from="(410,370)" to="(430,370)"/>
     <wire from="(410,210)" to="(430,210)"/>
+    <wire from="(410,530)" to="(430,530)"/>
+    <wire from="(410,50)" to="(430,50)"/>
+    <wire from="(410,130)" to="(430,130)"/>
+    <wire from="(410,610)" to="(430,610)"/>
+    <wire from="(410,370)" to="(430,370)"/>
+    <wire from="(410,450)" to="(430,450)"/>
+    <wire from="(410,290)" to="(430,290)"/>
     <wire from="(230,720)" to="(230,760)"/>
     <wire from="(380,870)" to="(530,870)"/>
     <wire from="(110,70)" to="(130,70)"/>
@@ -4318,14 +4318,14 @@ d40c 13*0 2080 200 2100 4308 3801 d609
     <wire from="(600,90)" to="(600,140)"/>
     <wire from="(910,280)" to="(970,280)"/>
     <wire from="(300,330)" to="(340,330)"/>
-    <wire from="(1330,590)" to="(1340,590)"/>
+    <wire from="(1330,510)" to="(1340,510)"/>
     <wire from="(1330,350)" to="(1340,350)"/>
     <wire from="(1330,670)" to="(1340,670)"/>
     <wire from="(1330,430)" to="(1340,430)"/>
-    <wire from="(1330,110)" to="(1340,110)"/>
     <wire from="(1330,190)" to="(1340,190)"/>
+    <wire from="(1330,110)" to="(1340,110)"/>
     <wire from="(1330,270)" to="(1340,270)"/>
-    <wire from="(1330,510)" to="(1340,510)"/>
+    <wire from="(1330,590)" to="(1340,590)"/>
     <wire from="(910,50)" to="(910,90)"/>
     <wire from="(650,300)" to="(670,300)"/>
     <wire from="(310,350)" to="(340,350)"/>
@@ -4348,12 +4348,12 @@ d40c 13*0 2080 200 2100 4308 3801 d609
     <wire from="(910,90)" to="(970,90)"/>
     <wire from="(300,380)" to="(340,380)"/>
     <wire from="(1000,140)" to="(1020,140)"/>
-    <wire from="(310,480)" to="(340,480)"/>
     <wire from="(310,400)" to="(340,400)"/>
+    <wire from="(260,990)" to="(290,990)"/>
+    <wire from="(310,480)" to="(340,480)"/>
     <wire from="(1060,130)" to="(1070,130)"/>
     <wire from="(650,430)" to="(670,430)"/>
     <wire from="(650,350)" to="(670,350)"/>
-    <wire from="(260,990)" to="(290,990)"/>
     <wire from="(310,800)" to="(340,800)"/>
     <wire from="(310,880)" to="(340,880)"/>
     <wire from="(1120,110)" to="(1130,110)"/>
@@ -4372,10 +4372,10 @@ d40c 13*0 2080 200 2100 4308 3801 d609
     <wire from="(1330,530)" to="(1340,530)"/>
     <wire from="(1330,610)" to="(1340,610)"/>
     <wire from="(1330,450)" to="(1340,450)"/>
-    <wire from="(1330,130)" to="(1340,130)"/>
     <wire from="(1330,210)" to="(1340,210)"/>
-    <wire from="(1330,290)" to="(1340,290)"/>
+    <wire from="(1330,130)" to="(1340,130)"/>
     <wire from="(1330,370)" to="(1340,370)"/>
+    <wire from="(1330,290)" to="(1340,290)"/>
     <wire from="(650,80)" to="(670,80)"/>
     <wire from="(260,640)" to="(290,640)"/>
     <wire from="(310,530)" to="(340,530)"/>
@@ -4401,11 +4401,11 @@ d40c 13*0 2080 200 2100 4308 3801 d609
     <wire from="(300,80)" to="(340,80)"/>
     <wire from="(600,50)" to="(600,90)"/>
     <wire from="(650,130)" to="(670,130)"/>
+    <wire from="(260,690)" to="(290,690)"/>
     <wire from="(310,100)" to="(340,100)"/>
     <wire from="(310,500)" to="(340,500)"/>
     <wire from="(1060,230)" to="(1070,230)"/>
     <wire from="(650,450)" to="(670,450)"/>
-    <wire from="(260,690)" to="(290,690)"/>
     <wire from="(310,980)" to="(340,980)"/>
     <wire from="(310,900)" to="(340,900)"/>
     <wire from="(260,140)" to="(280,140)"/>
@@ -4422,13 +4422,13 @@ d40c 13*0 2080 200 2100 4308 3801 d609
     <wire from="(220,50)" to="(260,50)"/>
     <wire from="(300,130)" to="(340,130)"/>
     <wire from="(1330,390)" to="(1340,390)"/>
-    <wire from="(1330,630)" to="(1340,630)"/>
-    <wire from="(1330,150)" to="(1340,150)"/>
-    <wire from="(1330,70)" to="(1340,70)"/>
-    <wire from="(1330,310)" to="(1340,310)"/>
-    <wire from="(1330,230)" to="(1340,230)"/>
-    <wire from="(1330,550)" to="(1340,550)"/>
     <wire from="(1330,470)" to="(1340,470)"/>
+    <wire from="(1330,70)" to="(1340,70)"/>
+    <wire from="(1330,150)" to="(1340,150)"/>
+    <wire from="(1330,230)" to="(1340,230)"/>
+    <wire from="(1330,310)" to="(1340,310)"/>
+    <wire from="(1330,550)" to="(1340,550)"/>
+    <wire from="(1330,630)" to="(1340,630)"/>
     <wire from="(910,90)" to="(910,130)"/>
     <wire from="(650,180)" to="(670,180)"/>
     <wire from="(650,100)" to="(670,100)"/>
@@ -4454,10 +4454,10 @@ d40c 13*0 2080 200 2100 4308 3801 d609
     <wire from="(300,580)" to="(340,580)"/>
     <wire from="(650,230)" to="(670,230)"/>
     <wire from="(650,150)" to="(670,150)"/>
+    <wire from="(1060,90)" to="(1070,90)"/>
     <wire from="(260,790)" to="(290,790)"/>
     <wire from="(310,200)" to="(340,200)"/>
     <wire from="(310,600)" to="(340,600)"/>
-    <wire from="(1060,90)" to="(1070,90)"/>
     <wire from="(310,680)" to="(340,680)"/>
     <wire from="(310,1000)" to="(340,1000)"/>
     <wire from="(260,240)" to="(280,240)"/>
@@ -7762,11 +7762,11 @@ d40c 13*0 2080 200 2100 4308 3801 d609
     <wire from="(1340,880)" to="(1370,880)"/>
     <wire from="(210,300)" to="(350,300)"/>
     <wire from="(1390,370)" to="(1420,370)"/>
-    <wire from="(260,650)" to="(520,650)"/>
+    <wire from="(1330,640)" to="(1350,640)"/>
     <wire from="(940,580)" to="(950,580)"/>
+    <wire from="(260,650)" to="(520,650)"/>
     <wire from="(1340,410)" to="(1360,410)"/>
     <wire from="(1310,1100)" to="(1330,1100)"/>
-    <wire from="(1330,640)" to="(1350,640)"/>
     <wire from="(1310,1020)" to="(1330,1020)"/>
     <wire from="(1420,330)" to="(1440,330)"/>
     <wire from="(210,310)" to="(340,310)"/>
@@ -7917,9 +7917,9 @@ d40c 13*0 2080 200 2100 4308 3801 d609
     <wire from="(1340,920)" to="(1370,920)"/>
     <wire from="(940,700)" to="(950,700)"/>
     <wire from="(1340,450)" to="(1360,450)"/>
-    <wire from="(1330,680)" to="(1350,680)"/>
     <wire from="(1350,1020)" to="(1370,1020)"/>
     <wire from="(1350,1100)" to="(1370,1100)"/>
+    <wire from="(1330,680)" to="(1350,680)"/>
     <wire from="(920,400)" to="(920,450)"/>
     <wire from="(260,390)" to="(260,650)"/>
     <wire from="(1640,220)" to="(1680,220)"/>
@@ -8751,8 +8751,8 @@ d40c 13*0 2080 200 2100 4308 3801 d609
     <wire from="(860,500)" to="(860,510)"/>
     <wire from="(260,320)" to="(380,320)"/>
     <wire from="(420,280)" to="(420,430)"/>
-    <wire from="(840,210)" to="(880,210)"/>
     <wire from="(840,330)" to="(880,330)"/>
+    <wire from="(840,210)" to="(880,210)"/>
     <wire from="(840,410)" to="(880,410)"/>
     <wire from="(840,490)" to="(880,490)"/>
     <wire from="(330,610)" to="(570,610)"/>
@@ -8835,9 +8835,9 @@ d40c 13*0 2080 200 2100 4308 3801 d609
     <wire from="(470,330)" to="(570,330)"/>
     <wire from="(1250,190)" to="(1300,190)"/>
     <wire from="(260,210)" to="(490,210)"/>
+    <wire from="(840,290)" to="(860,290)"/>
     <wire from="(260,220)" to="(480,220)"/>
     <wire from="(840,250)" to="(860,250)"/>
-    <wire from="(840,290)" to="(860,290)"/>
     <wire from="(840,370)" to="(860,370)"/>
     <wire from="(840,450)" to="(860,450)"/>
     <wire from="(480,310)" to="(570,310)"/>
@@ -9262,10 +9262,22 @@ d40c 13*0 2080 200 2100 4308 3801 d609
     <wire from="(630,80)" to="(630,100)"/>
     <wire from="(590,220)" to="(590,240)"/>
     <wire from="(580,710)" to="(580,730)"/>
+    <wire from="(220,330)" to="(250,330)"/>
     <wire from="(220,290)" to="(250,290)"/>
     <wire from="(220,170)" to="(250,170)"/>
+    <wire from="(220,190)" to="(250,190)"/>
+    <wire from="(220,230)" to="(250,230)"/>
+    <wire from="(220,210)" to="(250,210)"/>
+    <wire from="(220,150)" to="(250,150)"/>
+    <wire from="(220,130)" to="(250,130)"/>
+    <wire from="(220,110)" to="(250,110)"/>
+    <wire from="(220,90)" to="(250,90)"/>
+    <wire from="(220,70)" to="(250,70)"/>
+    <wire from="(220,30)" to="(250,30)"/>
+    <wire from="(220,50)" to="(250,50)"/>
+    <wire from="(220,270)" to="(250,270)"/>
+    <wire from="(220,250)" to="(250,250)"/>
     <wire from="(220,310)" to="(250,310)"/>
-    <wire from="(220,330)" to="(250,330)"/>
     <wire from="(220,350)" to="(250,350)"/>
     <wire from="(220,370)" to="(250,370)"/>
     <wire from="(220,390)" to="(250,390)"/>
@@ -9275,18 +9287,6 @@ d40c 13*0 2080 200 2100 4308 3801 d609
     <wire from="(220,470)" to="(250,470)"/>
     <wire from="(220,490)" to="(250,490)"/>
     <wire from="(620,510)" to="(620,550)"/>
-    <wire from="(220,270)" to="(250,270)"/>
-    <wire from="(220,250)" to="(250,250)"/>
-    <wire from="(220,150)" to="(250,150)"/>
-    <wire from="(220,190)" to="(250,190)"/>
-    <wire from="(220,230)" to="(250,230)"/>
-    <wire from="(220,210)" to="(250,210)"/>
-    <wire from="(220,130)" to="(250,130)"/>
-    <wire from="(220,110)" to="(250,110)"/>
-    <wire from="(220,90)" to="(250,90)"/>
-    <wire from="(220,70)" to="(250,70)"/>
-    <wire from="(220,30)" to="(250,30)"/>
-    <wire from="(220,50)" to="(250,50)"/>
     <wire from="(1250,220)" to="(1260,220)"/>
     <wire from="(1250,280)" to="(1260,280)"/>
     <wire from="(1250,160)" to="(1260,160)"/>
@@ -10004,19 +10004,19 @@ d40c 13*0 2080 200 2100 4308 3801 d609
     <wire from="(1490,510)" to="(1490,540)"/>
     <wire from="(1490,710)" to="(1490,740)"/>
     <wire from="(1490,910)" to="(1490,940)"/>
+    <wire from="(1440,620)" to="(1490,620)"/>
     <wire from="(1440,740)" to="(1490,740)"/>
     <wire from="(790,730)" to="(790,750)"/>
     <wire from="(1440,420)" to="(1490,420)"/>
     <wire from="(1440,540)" to="(1490,540)"/>
-    <wire from="(1440,620)" to="(1490,620)"/>
     <wire from="(1480,500)" to="(1530,500)"/>
-    <wire from="(1480,460)" to="(1530,460)"/>
-    <wire from="(1440,820)" to="(1490,820)"/>
-    <wire from="(1440,940)" to="(1490,940)"/>
     <wire from="(1480,660)" to="(1530,660)"/>
     <wire from="(1480,700)" to="(1530,700)"/>
     <wire from="(1480,900)" to="(1530,900)"/>
     <wire from="(1480,860)" to="(1530,860)"/>
+    <wire from="(1480,460)" to="(1530,460)"/>
+    <wire from="(1440,820)" to="(1490,820)"/>
+    <wire from="(1440,940)" to="(1490,940)"/>
     <wire from="(1050,310)" to="(1050,320)"/>
     <wire from="(1050,470)" to="(1050,480)"/>
     <wire from="(1050,630)" to="(1050,640)"/>
